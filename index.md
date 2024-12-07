@@ -12,8 +12,8 @@ I am Viviana Romero Alarcon, a computational biologist from Colombia and a curre
 
   </div>
   <div style="flex: 40%;">
-    
-    ![img/Picture1.png](https://github.com/alarconvv/alarconvv.github.io/blob/b292bc3ba27f45901fbb26c03f0bef740a13ab0f/img/lamonatype.png)
-    
+  
   </div>
 </div>
+
+![Vra](/img/Picture1.png)
