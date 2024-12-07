@@ -56,18 +56,20 @@
       </div>
 
       
-      <footer class="site-footer">
-       
-        
-        <!-- Social Media Icons -->
-        <div class="social-media">
-          {% for social in site.social_links %}
-            <a href="{{ social.url }}" target="_blank" class="social-icon"><i class="{{ social.icon }}"></i></a>
-          {% endfor %}
-           <p> © alarconvv 2024 </p>
-        </div>
+<footer class="site-footer">
+  <!-- Social Media Icons -->
+  <div class="social-media">
+    {% for social in site.social_links %}
+      <a href="{{ social.url }}" target="_blank" class="social-icon">
+        <i class="{{ social.icon }}"></i>
+      </a>
+    {% endfor %}
+  </div>
+  
+  <!-- Copyright Text -->
+  <p> © alarconvv 2024</p>
+</footer>
 
-      </footer>
     </main>
 
     <script>
