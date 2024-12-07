@@ -77,19 +77,33 @@ $hr-border-color: #eff0f1 !default;
 
 
 
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  padding: 20px;
+}
+
 .social-media {
-  margin-top: 10px;
+  display: flex;
+  gap: 15px; /* Adjust the space between the social media icons */
 }
 
 .social-icon {
-  font-size: 24px;
-  margin: 0 10px;
-  color: #333;
+  color: #07b4ba; /* Set the color for icons */
+  font-size: 1.5em; /* Set the icon size */
   text-decoration: none;
 }
 
 .social-icon:hover {
-  color: #007bff; /* Change the hover color */
+  color: #000; /* Change the icon color on hover */
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 1em;
+  color: #000; /* Set the text color */
 }
 
 .recent-post {
