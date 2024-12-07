@@ -1,6 +1,6 @@
 title: La MonaTyping
 author: Viviana Romero Alarcon
-description: Let's see how much the monkey can type...
+description: ### Let's see how much the monkey can type ###
 url: "https://alarconvv.github.io"
 show_downloads: true
 remote_theme: pages-themes/cayman@v0.2.0
@@ -20,6 +20,10 @@ navigation:
     url: "/Projects.md"
   - title: "Posts"
     url: "/Posts.md"
+  - title: "B&W"
+    url: "/BW.md"
+  - title: "Contact"
+    url: "/Contanct.md"
 
 
 social_links:
