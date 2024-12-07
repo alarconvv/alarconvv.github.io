@@ -14,10 +14,14 @@ syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/
 navigation:
   - title: "Home"
     url: "/"
-  - title: "About"
+  - title: "CV"
     url: "/VivianaRomeroAlarcon.pdf"
-  - title: "Contact"
-    url: "/contact.md"
+  - title: "Projects"
+    url: "/Projects.md"
+  - title: "Posts"
+    url: "/Posts.md"
+  - title: "B&W"
+    url: "/BlackWhite.md"
 
 social_links:
   - title: "Twitter"
