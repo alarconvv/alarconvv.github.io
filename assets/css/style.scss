@@ -35,8 +35,8 @@ $hr-border-color: #eff0f1 !default;
 .project-name::before {
     content: " ";
     display: inline-block;
-    width: 0.9em;
-    height: 0.9em;
+    width: 1.5em;
+    height: 1.5em;
     padding-right: 0.5em;
     vertical-align: middle;
     background: url("{{site.logo_url}}");
