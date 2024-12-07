@@ -91,3 +91,23 @@ $hr-border-color: #eff0f1 !default;
 .social-icon:hover {
   color: #007bff; /* Change the hover color */
 }
+
+.recent-post {
+        margin-top: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+.recent-post h2 {
+        color: #333;
+        font-size: 24px;
+      }
+
+.recent-post p {
+        font-size: 16px;
+        color: #555;
+      }
+
+
