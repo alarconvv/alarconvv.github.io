@@ -13,7 +13,7 @@ I am Viviana Romero Alarcon, a computational biologist from Colombia and a curre
   </div>
   <div style="flex: 40%;">
     
-    ![Viviana](/img/Picture1.png)
+    ![Viviana](img/Picture1.png)
     
   </div>
 </div>
