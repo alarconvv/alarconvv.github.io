@@ -37,24 +37,14 @@
           <a href="{{ item.url }}" class="btn">{{ item.title }}</a>
         {% endfor %}
       </nav>
-      
-      {% if site.show_downloads %}
-        {% unless site.buttons.zip_hide %}
-          <a href="{{ site.buttons.zip_url | default: site.github.zip_url }}" class="btn">{{ site.buttons.zip_title | default: "Download .zip" }}</a>
-        {% endunless %}
-        {% unless site.buttons.tar_hide %}
-          <a href="{{ site.buttons.tar_url | default: site.github.tar_url }}" class="btn">{{ site.buttons.tar_title | default: "Download .tar.gz" }}</a>
-        {% endunless %}
-      {% endif %}
+    
     </header>
 
     <main id="content" class="main-content" role="main">
       {{ content }}
 
       <footer class="site-footer">
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-        {% endif %}
+       
         
         <!-- Social Media Icons -->
         <div class="social-media">
