@@ -1,6 +1,7 @@
 title: La MonaTyping
 author: Viviana Romero Alarcon
 Description: Following the ups and downs of my learning process
+url: "https://alarconvv.github.io"
 show_downloads: true
 remote_theme: pages-themes/cayman@v0.2.0
 color:
@@ -9,9 +10,22 @@ color:
   gradient_right: "#07b4ba"
 logo_url: https://github.githubassets.com/images/icons/emoji/octocat.png
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
-buttons:
-  zip_url: https://github.com/tuur29/pages-themes-cayman
-  zip_title: View Documentation
-  zip_hide: false
-  tar_hide: true
-  github_hide: true
+
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
+
+    social_links:
+  - title: "Twitter"
+    url: "https://twitter.com/yourusername"
+    icon: "fab fa-twitter"
+  - title: "Facebook"
+    url: "https://www.facebook.com/yourusername"
+    icon: "fab fa-facebook-f"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/yourusername"
+    icon: "fab fa-linkedin-in"
