@@ -106,6 +106,44 @@ $hr-border-color: #eff0f1 !default;
   color: #000; /* Set the text color */
 }
 
+
+/* Ensure the header's content aligns correctly */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the button and social media icons */
+}
+
+#dark-mode-toggle {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #07b4ba;
+  color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+
 .recent-post {
         margin-top: 30px;
         padding: 20px;
@@ -124,18 +162,3 @@ $hr-border-color: #eff0f1 !default;
         color: #555;
       }
 
-#theme-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: var(--text-color);
-  transition: color 0.3s;
-}
-
-#theme-toggle:hover {
-  color: var(--link-color); // Matches your site's link hover color
-}
