@@ -1,5 +1,6 @@
 ---
 layout: default
+title: LaMonaTyping
 ---
 
 ## Hello there!
