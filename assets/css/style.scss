@@ -69,3 +69,19 @@ $hr-border-color: #eff0f1 !default;
 .navbar .btn:hover {
   background-color: #0056b3;
 }
+
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #007bff; /* Change the hover color */
+}
