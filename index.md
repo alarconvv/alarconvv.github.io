@@ -3,7 +3,8 @@ layout: default
 title: LaMonaTyping
 ---
 
-## Hello there!
+## Hello there! 
+(Website in construction)
 
 <div style="display: flex;">
   <div style="flex: 50%; padding-right: 20px;">
