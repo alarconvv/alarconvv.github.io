@@ -4,7 +4,7 @@ title: LaMonaTyping
 ---
 
 ## Hello there! 
-(Website in construction)
+(Website under construction)
 
 <div style="display: flex;">
   <div style="flex: 50%; padding-right: 20px;">
