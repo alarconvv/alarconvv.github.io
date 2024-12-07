@@ -19,7 +19,7 @@ navigation:
   - title: "Contact"
     url: "/contact.md"
 
-    social_links:
+social_links:
   - title: "Twitter"
     url: "https://twitter.com/alarconvv"
     icon: "fab fa-twitter"
