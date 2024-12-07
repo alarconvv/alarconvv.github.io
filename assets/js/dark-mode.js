@@ -1,14 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleButton = document.getElementById("theme-toggle");
-  const currentTheme = localStorage.getItem("theme") || "light";
-  
-  document.documentElement.setAttribute("data-theme", currentTheme);
-  toggleButton.textContent = currentTheme === "dark" ? "☀️" : "🌙";
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('dark-mode-toggle');
+  const currentTheme = localStorage.getItem('theme') || 'light';
 
-  toggleButton.addEventListener("click", () => {
-    const newTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-    toggleButton.textContent = newTheme === "dark" ? "☀️" : "🌙";
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+  }
+
+  toggle.addEventListener('click', () => {
+    const theme = document.body.classList.toggle('dark-mode') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
   });
 });
