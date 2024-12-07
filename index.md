@@ -18,6 +18,6 @@ a column separator -->
 :::
 
 ::: {.col data-latex="{0.4\textwidth}"}
- ![Viviana's Picture](/img/Picture1.jpp)
+ ![Viviana's Picture](img/Picture1.png)
 :::
 ::::::
