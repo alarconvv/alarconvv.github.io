@@ -1,11 +1,11 @@
-title: Custom Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
+title: La MonaTyping
+description: This blog follows the ups and downs of my learning process. 
 show_downloads: true
-remote_theme: tuur29/pages-themes-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 color:
   header: "#000"
-  gradient_left: "#e53935"
-  gradient_right: "#f57c00"
+  gradient_left: "#06252e"
+  gradient_right: "#07b4ba"
 logo_url: https://github.githubassets.com/images/icons/emoji/octocat.png
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
 buttons:
