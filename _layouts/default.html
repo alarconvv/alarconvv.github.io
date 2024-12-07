@@ -43,6 +43,19 @@
     <main id="content" class="main-content" role="main">
       {{ content }}
 
+
+      <!-- Most Recent Posts (Top 2 Posts) -->
+      <div class="recent-posts">
+        <h2>Most Recent Posts</h2>
+        {% for post in site.posts limit: 2 %}
+          <div class="recent-post">
+            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt }}</p>
+          </div>
+        {% endfor %}
+      </div>
+
+      
       <footer class="site-footer">
        
         
