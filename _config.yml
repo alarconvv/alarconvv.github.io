@@ -8,7 +8,7 @@ color:
   header: "#000"
   gradient_left: "#06252e"
   gradient_right: "#07b4ba"
-logo_url: https://github.githubassets.com/images/icons/emoji/octocat.png
+logo_url: /img/lamonatype.png
 syntax_theme: https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css
 
 navigation:
