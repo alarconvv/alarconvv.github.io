@@ -28,11 +28,22 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
+  <div class="header-right">
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <div class="social-media">
+      {% for social in site.social_links %}
+        <a href="{{ social.url }}" target="_blank" class="social-icon">
+          <i class="{{ social.icon }}"></i>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+      
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
 
- <!-- Dark Mode Switch -->
-  <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+
       
       <!-- Navbar with 3 buttons (dynamically generated) -->
       <nav class="navbar">
