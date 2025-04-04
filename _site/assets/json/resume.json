@@ -76,7 +76,9 @@
       "startDate": "2023",
       "endDate": "2027",
       "score": "3.98/5",
-      "courses": ["Data Analysis, Statistics for Machine Learning, Advanced Data Analysis, Artificial Intelligence, Scientific Communication"]
+      "courses": [
+        "Data Analysis, Statistics for Machine Learning, Advanced Data Analysis, Artificial Intelligence, Scientific Communication"
+      ]
     },
     {
       "institution": "Universidad Industrial de Santander",
@@ -176,7 +178,7 @@
       "authors": "Diaz Acevedo, C. J., Romero-Alarcon, L. V., & Miranda-Esquivel, D. R.",
       "releaseDate": "2020",
       "url": "https://doi.org/10.15517/rbt.v68i2.39347"
-      }
+    }
   ],
   "skills": [
     {
