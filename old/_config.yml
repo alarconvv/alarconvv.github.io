@@ -1,0 +1,63 @@
+title: LaMonaTyping
+author: Viviana Romero Alarcon
+description: "### Let's see how much the monkey can type ###"
+url: "https://alarconvv.github.io"
+
+# Show download options (you can toggle this as needed)
+show_downloads: true
+
+# Theme Configuration
+remote_theme: pages-themes/cayman@v0.2.0
+color:
+  header: "#000"
+  gradient_left: "#06252e"
+  gradient_right: "#07b4ba"
+logo_url: /img/lamonatype.png
+syntax_theme: "https://stylishthemes.github.io/Syntax-Themes/pygments/css-github/pygments-monokai.css"
+
+# Navigation Links
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "CV"
+    url: "/VivianaRomeroAlarcon.pdf"
+  - title: "Projects"
+    url: "/Projects.md"
+  - title: "Blog"
+    url: "/blog.md"
+  - title: "Posters"
+    url: "/Posters.md"
+  - title: "Contact"
+    url: "/Contact.md"
+
+# Social Media Links
+social_links:
+  - title: "Twitter"
+    url: "https://twitter.com/alarconvv"
+    icon: "fab fa-twitter"
+  - title: "GitHub"
+    url: "https://www.github.com/alarconvv"
+    icon: "fab fa-github"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/alarconvv"
+    icon: "fab fa-linkedin-in"
+
+# Posts (optional, if you wish to predefine some posts in the config)
+posts:
+  - title: "Post Title Example"
+    url: "/posts/example-post"
+    excerpt: "This is a sample post excerpt."
+    date: 2024-12-06
+
+# Markdown Options
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Build Settings (Optional, helps exclude files or folders from being processed)
+exclude:
+  - "README.md"
+  - "LICENSE.md"
+
+# Optional: Customizing your site's theme (if needed)
+theme: "jekyll-theme-cayman"
