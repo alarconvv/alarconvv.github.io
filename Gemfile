@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem "github-pages"
+
+gem "faraday-retry"
 
 # Core plugins that directly affect site building
 group :jekyll_plugins do
