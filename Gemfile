@@ -1,11 +1,9 @@
 source 'https://rubygems.org'
 
-gem "jekyll", "~> 4.2"
-
+gem 'jekyll'
 
 # Core plugins that directly affect site building
 group :jekyll_plugins do
-    gem "jekyll-timeago", "~> 0.13.1"
     gem 'jekyll-archives-v2'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
