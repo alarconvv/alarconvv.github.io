@@ -57,3 +57,8 @@ To sum up, I’ll be posting summaries of what I study, notes on tricky concepts
 Thanks for reading! 🌱
 
 Let’s see where this goes.
+
+```{r}
+ 1 + 1 = 2 #?
+```
+
