@@ -12,7 +12,7 @@ Hi! There!
 
 To be honest, I do not know how to run a blog or what to write here for the first time. I am not a person who loves writing (especially in a language that is not my mother tongue). However, I am the kind of person who enjoys sharing stories, learning new things (Thanks ADD), and particularly teaching. Yes, I like teaching, but not for the reasons you are thinking. I do not feel it is my vocation. Indeed, I admire people who love teaching and can cope with stress levels that I could not. For me, teaching has been the way how I learned to learn, and it is my approach to learning something. Then, It is a win-win! I learn, and somebody learns, too! Thus, considering my quals are coming in August, I just want to follow my favorite scientist's (Richard Feynman) words: "If you want to master something, teach it," and it is the purpose of this new chapter in my life: a blog I hope to maintain during my career as a scientist and help me approve my exams!
 
-### ![](images/clipboard-3930698824.png){width="21"} Who am I? Because there is a person behind this work
+### Who am I? Because there is a person behind this work
 
 My name is Leidy Viviana Romero Alarcon; everybody calls me Viviana except my family. For a while, I hated Leidy because it is a bad spelling of 'Lady' in English. However, I made peace with my first name after starting college and discovering about **Joseph Leidy,** one of the most prolific paleontologists and anatomists of the 19th century. This fact helps me to tolerate 'Leidy' because I love paleontology and vertebrate comparative anatomy. All this is to say: you are welcome to call me as you want. Random fact, isn't it?
 
