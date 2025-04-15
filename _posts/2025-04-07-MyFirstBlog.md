@@ -1,6 +1,4 @@
 ---
-
----
 layout: post
 title: "Why I’m Starting This Blog"
 date: 2025-04-07 15:09:00
@@ -123,12 +121,8 @@ Thanks for reading! 🌱
 
 Let's see where this goes.
 
-:::: cell
+
 ```r
- 1 + 1  #?
+ 1 + 1  
 ```
 
-::: {.cell-output .cell-output-stdout}
-    [1] 2
-:::
-::::
