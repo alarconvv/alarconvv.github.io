@@ -1,13 +1,8 @@
 ---
-categories:
-- quals
-- writing
-- motivation
+layout: post
+title: "Why I’m Starting This Blog"
 date: 2025-04-07
-description: Documenting my journey through the qualifying
-  exam---writing to learn, reflect, and grow.
-title: Why I'm Starting This Blog
-toc-title: Table of contents
+categories: [quals, writing, motivation]
 ---
 
 Hi! There!
