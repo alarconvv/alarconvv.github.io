@@ -59,6 +59,6 @@ Thanks for reading! 🌱
 Let’s see where this goes.
 
 ```{r}
- 1 + 1 = 2 #?
+ 1 + 1  #?
 ```
 
