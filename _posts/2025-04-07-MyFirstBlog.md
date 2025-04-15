@@ -1,9 +1,15 @@
 ---
+
+---
 layout: post
 title: "Why I’m Starting This Blog"
-date: 2025-04-07
-categories: [quals, writing, motivation]
+date: 2025-04-07 15:09:00
+description: Documenting my journey through the qualifying exam—writing to learn, reflect, and grow.
+tags: [quals, writing, motivation]
+categories: 1
+featured: true
 ---
+
 
 Hi! There!
 
@@ -118,7 +124,7 @@ Thanks for reading! 🌱
 Let's see where this goes.
 
 :::: cell
-``` {.r .cell-code}
+```r
  1 + 1  #?
 ```
 
