@@ -1,9 +1,8 @@
 ---
 layout: page
 title: Paleosize
-description: **PaleoSize** is a research/package project exploring body size evolution in extinct vertebrates.
+description: PaleoSize is a research-package project exploring body size evolution in extinct vertebrates.
 img: assets/img/7.jpg
-redirect: https://unsplash.com
 importance: 3
 category: work
 ---
