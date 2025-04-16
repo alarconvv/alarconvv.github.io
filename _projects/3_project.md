@@ -7,8 +7,22 @@ importance: 3
 category: work
 ---
 
+<<<<<<< HEAD
 # 🦖 PaleoSize
 
+=======
+---
+layout: page
+title: Paleosize
+description: PaleoSize is a research-package project exploring body size evolution in extinct vertebrates.
+img: assets/img/7.jpg
+importance: 3
+category: work
+---
+
+# 🦖 PaleoSize
+
+>>>>>>> baed0bd (vs 0.1)
 **PaleoSize** is a research project exploring body size evolution in extinct vertebrates—particularly dinosaurs and other large-bodied taxa. This repository includes data, analysis scripts, and visualizations for studying body size evolution in bipeds and quadrupeds using phylogenetic comparative methods.
 
 ## 📚 Project Goals
