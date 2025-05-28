@@ -106,7 +106,7 @@ pagination:
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
     {% else %}
-	  {% assign all_posts = site.posts | concat: site.quarto %}
+	  {% assign all_posts = site.posts | concat: site.quarto_posts %}
 	  {% assign sorted_posts = all_posts | sort: 'date' | reverse %}
 	  
 	  {% for post in sorted_posts %}
