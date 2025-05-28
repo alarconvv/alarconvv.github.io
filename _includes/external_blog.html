@@ -1,0 +1,11 @@
+{% for source in site.data.external_blog %}
+  <h2>{{ source.name }}</h2>
+  <ul>
+    {% for post in source.posts %}
+      <li>
+        <a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
+        <span>({{ post.published_date | date: "%B %d, %Y" }})</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}

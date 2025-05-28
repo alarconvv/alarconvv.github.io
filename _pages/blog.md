@@ -193,4 +193,6 @@ pagination:
 {% include pagination.liquid %}
 {% endif %}
 
+{% include external_blog.html %}
+
 </div>

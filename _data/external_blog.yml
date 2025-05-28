@@ -1,6 +1,8 @@
 - name: "My Quarto Blog"
   posts:
-    - url: https://github.com/alarconvv/alarconvv.github.io/blob/e6e79c5ec841c3893a46fb69d0617d09ca97becf/secondpost/2025-05-028-MysecondTry.html
-      published_date: 2024-04-20
-    - url: https://github.com/alarconvv/alarconvv.github.io/blob/e6e79c5ec841c3893a46fb69d0617d09ca97becf/secondpost/2025-05-028-MysecondTry.html
-      published_date: 2025-03-15
+    - url: https://github.com/alarconvv/alarconvv.github.io/blob/5bee38e730511eaf85523b5d468d40587a5088e0/secondpost/
+      title: "Post 1 Title"
+      published_date: 2025-04-20
+    - url: https://github.com/alarconvv/alarconvv.github.io/blob/5bee38e730511eaf85523b5d468d40587a5088e0/secondpost/
+      title: "Post 2 Title"
+      published_date: 2024-03-15
