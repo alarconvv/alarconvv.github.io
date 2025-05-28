@@ -151,9 +151,12 @@ collections:
     output: true
   posters:
     output: true
-  html-posts:
+  posts:
     output: true
-    permalink: /blog/:name/
+  quarto:
+    output: true
+    permalink: /blog/:year/:title/
+
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

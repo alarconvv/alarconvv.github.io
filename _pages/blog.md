@@ -106,8 +106,16 @@ pagination:
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
     {% else %}
-	  {% assign all_posts = site.posts | concat: site.html-posts %}
-      {% assign postlist = all_posts | sort: 'date' | reverse %}
+	  {% assign all_posts = site.posts | concat: site.quarto %}
+	  {% assign sorted_posts = all_posts | sort: 'date' | reverse %}
+	  
+	  {% for post in sorted_posts %}
+		<li>
+			<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+			<span>{{ post.date | date: "%B %d, %Y" }}</span>
+		</li>
+{% endfor %}
+	  
     {% endif %}
 
     {% for post in postlist %}
