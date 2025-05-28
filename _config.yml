@@ -151,11 +151,9 @@ collections:
     output: true
   posters:
     output: true
-  posts:
+  quarto_posts:
     output: true
-  quarto:
-    output: true
-    permalink: /blog/:year/:title/
+    permalink: /:collection/:name
 
 
 # -----------------------------------------------------------------------------

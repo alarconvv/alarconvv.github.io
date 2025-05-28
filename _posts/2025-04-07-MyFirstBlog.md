@@ -4,7 +4,7 @@ title: "Why I’m Starting This Blog"
 date: 2025-04-07 15:09:00
 description: Documenting my journey through the qualifying exam—writing to learn, reflect, and grow.
 tags: [quals writing motivation]
-categories: sample-posts
+categories: posts
 featured: true
 ---
 
