@@ -151,6 +151,9 @@ collections:
     output: true
   posters:
     output: true
+  html-posts:
+    output: true
+    permalink: /blog/:name/
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

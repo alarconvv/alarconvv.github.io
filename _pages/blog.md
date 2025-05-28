@@ -106,7 +106,8 @@ pagination:
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
     {% else %}
-      {% assign postlist = site.posts %}
+	  {% assign all_posts = site.posts | concat: site.html-posts %}
+      {% assign postlist = all_posts | sort: 'date' | reverse %}
     {% endif %}
 
     {% for post in postlist %}
@@ -193,6 +194,6 @@ pagination:
 {% include pagination.liquid %}
 {% endif %}
 
-{% include external_blog.html %}
+
 
 </div>
