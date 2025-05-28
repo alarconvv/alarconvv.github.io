@@ -1,0 +1,6 @@
+- name: "My Quarto Blog"
+  posts:
+    - url: https://github.com/alarconvv/alarconvv.github.io/blob/e6e79c5ec841c3893a46fb69d0617d09ca97becf/secondpost/2025-05-028-MysecondTry.html
+      published_date: 2024-04-20
+    - url: https://github.com/alarconvv/alarconvv.github.io/blob/e6e79c5ec841c3893a46fb69d0617d09ca97becf/secondpost/2025-05-028-MysecondTry.html
+      published_date: 2025-03-15
