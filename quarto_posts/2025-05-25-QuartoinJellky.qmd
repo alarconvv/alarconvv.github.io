@@ -122,4 +122,4 @@ Save changes and move it to my \_post/ folder. Commit my new post to the reposit
 
 Simple, no elegant, but useful. Thus, I can control the tags ;)
 
-Now, I feel comfortable using my favorite document generator but also using the jekyll template that I loved since the first time when I saw it.
+Now, I feel comfortable using my favorite document generator but also using the jekyll template that I loved since the first time when I saw it. After two weeks looking for solution, finally, I do not have any other excuse to delay writing and update my blog.
