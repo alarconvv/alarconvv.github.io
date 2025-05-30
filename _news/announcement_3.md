@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Postdoctoral Research Assistant in Macroecology, Paleobiology, & Niche Modelling
-date: 2025-05-128 07:59:00-0400
+date: 2025-05-28 07:59:00-0400
 inline: false
 related_posts: false
 ---
