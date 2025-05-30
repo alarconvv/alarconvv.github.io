@@ -1,0 +1,125 @@
+### start is difficult, but it is the easiest part
+
+As a PhD student, there always are many things happening at the same time; professional and personal things. Thus, to find time during the day to write, sometimes look impossible. This is why make the first post is the easiest part, but keep the motivation and the discipline is the most difficult one. But anyway, we are here again and I want to dedicate this post to Quarto, and why I was late to publish my second post. Let's start
+
+# What is Quarto and why is it my favorite?
+
+I like to define **Quarto** as a framework-ish that integrates different technologies to create outstanding and high quality documents, which are interactive, reproducible and publishable.
+
+Currently, **Quarto** supports R, Julia, Python and Observable. You could integrate it in notebooks such as Jupyter, Rstudio, VS code, or just to render it in your terminal. One of my favorite feature of **Quarto** is the fact that every single type of document that as scientists we should produce, it is possible to create it in **Quarto**. In addition, the documentation is awesome and it is why **Quarto** is really easy to learn. But in my opinion the best part is It is open source \<3
+
+I encourage you to start! I promise, you will never regret! (How to start in [QUARTO](https://quarto.org/docs/get-started/hello/rstudio.html))
+
+# Jekyll and Github
+
+On the other hand, [**Jekyll**](https://jekyllrb.com/docs/) is a website generator, which works very well to create a portfolio and host it as a [**Github page**](https://pages.github.com/). There are many templates that people can clone, edit and use for personal proposal. If you are fine writing documents directly in markdown, you won't have any problem. Basically, you could create a markdown (.md) file, save it in your \_post/ folder (In case, you are creating a post), then push it in your github account and github will build and deploy your website. [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site): it is a easy way to create a page in github.
+
+A basic structure of your website could looks like this:
+
+```{r, eval=FALSE}
+
+my-blog/
+├── _posts/
+├── assets/
+├── _config.yml
+```
+
+The problem is when you do not want to create the documents completely in markdown, but want to use Jupyter or Quarto into your Jekyll site.
+
+# Quarto in a Jekyll site, it wasn’t straightforward
+
+After two weeks trying to solve the problem, now, I know three solutions to use Quarto in Github Pages. I won't elaborate the first two solution, but I will explain the third one, which was how I solved my problem.
+
+1.  From a basic Jekyll site, you could edit your file .yml and link .html files (Those file you could have built as a Quarto document and then render as a html). One lovely example is Prof Jarrett's website for [Biol607](https://github.com/biol607/biol607.github.io/tree/master). If you check config.yml you will notice that every linked html is a page that was rendered in Quarto.
+
+2.  Another option is to edit directly your workflow. It is a file called "workflow" inside your hidden folder .github. If you cloned your repository, locally it will create some hidden folders that contain the routine to communicate through git with your remote repo and how to build the website, once you update your repo in github.
+
+```{R, eval=FALSE}
+
+
+$ alarconvv.github.io % cd .github
+
+$ .github % ls
+
+CODEOWNERS	no-response.yml	stale.yml
+config.yml	settings.yml	workflows
+
+$ nano workflows
+
+```
+
+Thus, you could include in your workflow file a code block that allow Github automatically to render Quarto document (qmd) as html. Notice that, I am saving my .qmd files in a folder called quarto_posts/ and render them in \_posts/
+
+```{r, eval=FALSE}
+name: Render Quarto posts to HTML
+  run: |
+    mkdir -p _posts
+    for f in quarto_posts/*.qmd; do
+      [ -e "$f" ] || continue
+      BASENAME=$(basename "$f" .qmd)
+      OUTFILE="_posts/$(date +%Y-%m-%d)-${BASENAME}.html"
+      quarto render "$f" --to html --output "$OUTFILE"
+    done
+```
+
+That means your folder structure should look like this:
+
+```{r, eval=FALSE}
+
+my-blog/
+├── _posts/
+│   ├── report.html
+├── assets/
+├── quarto-docs/
+│   ├── report.qmd
+├── _config.yml
+```
+
+3.  The last solution that I know, and the one that I am using is not the most elegant or clever but works! This solution is useful specially for website using layout with liquid ([See my web code](https://github.com/alarconvv/alarconvv.github.io))
+
+if the document is only text (it does not include any code block), l write it as a markdown document, Including a YALM block in the beginning. Then, I save this .md file directly in my \_post/ folder.
+
+It is the [YAML block](https://github.com/alarconvv/alarconvv.github.io/blob/master/_posts/2025-04-07-MyFirstBlog.md?plain=1) I used for [my first post](https://alarconvv.github.io/blog/2025/MyFirstBlog/).
+
+```{r, eval=FALSE}
+---
+layout: post
+title: "Why I’m Starting This Blog"
+date: 2025-04-07 15:09:00
+description: Documenting my journey through the qualifying exam — writing to learn, reflect, and grow.
+tags: [quals writing motivation]
+categories: posts
+featured: true
+---
+
+Hi! There! ---> the rest of the document.
+```
+
+However, most of my post will include chunks with code in R or Python. In that case, I am writing the document in Rstudio as usual. Then, I render it as html. You could render it in Rstudio or using command line in your terminal.
+
+```{r, eval=FALSE}
+quarto render YYYY-MM-DD-title-of-post.qmd --to html
+```
+
+Finally, I open my html file in a text editor and add YAML front matter at the top of the file.\
+
+```{r, eval=FALSE}
+---
+layout: post
+title: "Using Quarto with Jekyll"
+date: 2025-05-28
+tags: [r, quarto]
+categories: [blog]
+description: "How to integrate Quarto HTML output in Jekyll blog"
+---
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head> -----> the rest of your HTML doc.
+```
+
+Save changes and move it to my \_post/ folder. Commit my new post to the repository and push the changes. Then, my blog will be updated automatically by GitHub Pages.
+
+Simple, no elegant, but useful. Thus, I can control the tags ;)
+
+Now, I feel comfortable using my favorite document generator but also using the jekyll template that I loved since the first time when I saw it.
