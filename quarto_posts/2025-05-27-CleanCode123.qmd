@@ -1,0 +1,65 @@
+As I mentioned in my first post, I want to track my process of studying for my doctoral written exam. I will dedicate this post to a book assigned by Dr. Daniel Haenh. The book is Clean Code: A Handbook of Agile Software Craftsmanship by Martin Coplien (2009)\*. This book is a friendly guide to learning how to be fine, elegant, and polite when we are coding. Although you might think this book is for advanced programmers, I believe it is for anyone who has written a script at some point in their life.
+
+People like me, a biologist learning programming!
+
+Although, this book uses Java but I will try to put it in R or Python context because those are the languages I use the most.
+
+## ✍️ Let's start - What is code?
+
+**Coding** is the way how we can communicate with machines, in this case, computers. When we code, we are providing the machine a set of requirements to perform a task. Specify the requirements in fine detail so that the machine can understand is "**programming,"** and the specifications are the **code.**
+
+```{r}
+
+# set a random sequence 1 to 10
+set.seed(75) # random number - always remember the seed!
+
+sequence <- runif(n = 10, min = 1, max = 20)
+sequence
+
+# get the mean
+
+meanSeq <- mean(sequence)
+meanSeq
+
+# rest the mean to every number
+
+dTomean <- sequence - meanSeq 
+dTomean
+```
+
+Simple!
+
+Requirements = tasks = **programming**
+
+specification = structured instructions = **code**
+
+## 🥴 What is the deal with the Bad code?
+
+Code is forever! If you have written a bunch of code for your thesis, and have stopped for a while. When you want to retake that task, probably, you will understand why good code matters.
+
+For instance, comments are something that, in my case, I delay until the end of the scripting process, like the "post-processing." However, comments are not only for other people. Comments are mainly for me, in the future, and that future could be in some years or even the next morning. Then, in bad code, the more lines you accumulate, the more time is a wasted in the future trying to write and realize what that code was doing.
+
+In that way, a notable quote from this chapter is **"later equal never" (Le Blanc's Law).** There are some practices we should follow from the beginning of our creation. For example, following a style guide is a good start. Then, "[Advanced R](http://adv-r.had.co.nz/Style.html)" by Wickham could be your "good" starting point.
+
+## 👀 But what is a **good code**?
+
+It depends on the author, but in general, they overlap in the following features. Thus, **clean code** is:
+
+1.  Efficient, simple, and direct
+
+2.  It is the opposite of speculative
+
+3.  It should have been tested
+
+4.  It has meaningful names
+
+5.  It is readable by humans (comments!)
+
+There are many interpretations of what is good or clean code, but one of my favorites is when the author compares clean code with painting. Everybody can discern a well-painted portrait from one that is not well done; however, that ability to distinguish does not give us the ability to paint a masterpiece. It is something that we acquire over time, patience, and the adoption of good practices and style.
+
+## ✅ Progress Tracker
+
+-   Total days: 1/40
+-   Material from: Daniel Haen — Clean Code ✅
+
+\*Martin, R. C., Coplien, J. O. (2009). Clean code: a handbook of agile software craftsmanship. Upper Saddle River, NJ \[etc.\]: Prentice Hall. ISBN: 9780132350884 0132350882

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Using Quarto with Jekyll"
-date: 2025-05-25
-tags: [code]
-categories: [blog]
-description: "Integrating Quarto Reports into a Jekyll Blog Without Losing Your Mind"
+title: "Coding: bad vs clean code"
+date: 2025-05-27
+tags: [code R quals]
+categories: [posts]
+description: "the importance of clean and professional code"
 ---
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ description: "Integrating Quarto Reports into a Jekyll Blog Without Losing Your 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>quartoinjellky</title>
+<title>cleancode123</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,16 +66,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="2025-05-25-QuartoinJellky_files/libs/clipboard/clipboard.min.js"></script>
-<script src="2025-05-25-QuartoinJellky_files/libs/quarto-html/quarto.js"></script>
-<script src="2025-05-25-QuartoinJellky_files/libs/quarto-html/popper.min.js"></script>
-<script src="2025-05-25-QuartoinJellky_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="2025-05-25-QuartoinJellky_files/libs/quarto-html/anchor.min.js"></script>
-<link href="2025-05-25-QuartoinJellky_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="2025-05-25-QuartoinJellky_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="2025-05-25-QuartoinJellky_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="2025-05-25-QuartoinJellky_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="2025-05-25-QuartoinJellky_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="2025-05-27-CleanCode123_files/libs/clipboard/clipboard.min.js"></script>
+<script src="2025-05-27-CleanCode123_files/libs/quarto-html/quarto.js"></script>
+<script src="2025-05-27-CleanCode123_files/libs/quarto-html/popper.min.js"></script>
+<script src="2025-05-27-CleanCode123_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="2025-05-27-CleanCode123_files/libs/quarto-html/anchor.min.js"></script>
+<link href="2025-05-27-CleanCode123_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="2025-05-27-CleanCode123_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="2025-05-27-CleanCode123_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="2025-05-27-CleanCode123_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="2025-05-27-CleanCode123_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -89,115 +89,67 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="start-is-difficult-but-it-is-the-easiest-part" class="level3">
-<h3 class="anchored" data-anchor-id="start-is-difficult-but-it-is-the-easiest-part">start is difficult, but it is the easiest part</h3>
-<p>As a PhD student, there are always many things happening at the same time, both professionally and personally. Thus, finding time during the day to write sometimes seems impossible. It is the reason why making the first post is the easiest part, but maintaining the motivation and the discipline is the most difficult one. Nevertheless, we are here again, and I would like to dedicate this post to Quarto and its interaction with Jekyll (the reason I was late publishing my second post). Let’s start</p>
+<p>As I mentioned in my first post, I want to track my process of studying for my doctoral written exam. I will dedicate this post to a book assigned by Dr.&nbsp;Daniel Haenh. The book is Clean Code: A Handbook of Agile Software Craftsmanship by Martin Coplien (2009)*. This book is a friendly guide to learning how to be fine, elegant, and polite when we are coding. Although you might think this book is for advanced programmers, I believe it is for anyone who has written a script at some point in their life.</p>
+<p>People like me, a biologist learning programming!</p>
+<p>Although, this book uses Java but I will try to put it in R or Python context because those are the languages I use the most.</p>
+<section id="lets-start---what-is-code" class="level2">
+<h2 class="anchored" data-anchor-id="lets-start---what-is-code">✍️ Let’s start - What is code?</h2>
+<p><strong>Coding</strong> is the way how we can communicate with machines, in this case, computers. When we code, we are providing the machine a set of requirements to perform a task. Specify the requirements in fine detail so that the machine can understand is “<strong>programming,“</strong> and the specifications are the <strong>code.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set a random sequence 1 to 10</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">75</span>) <span class="co"># random number - always remember the seed!</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>sequence <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">min =</span> <span class="dv">1</span>, <span class="at">max =</span> <span class="dv">20</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>sequence</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  5.063365  1.345535 13.995405  7.759881  2.440416  3.594791 11.449350
+ [8] 16.409047 18.949544  5.290540</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the mean</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>meanSeq <span class="ot">&lt;-</span> <span class="fu">mean</span>(sequence)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>meanSeq</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8.629788</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># rest the mean to every number</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>dTomean <span class="ot">&lt;-</span> sequence <span class="sc">-</span> meanSeq </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>dTomean</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] -3.5664224 -7.2842525  5.3656174 -0.8699061 -6.1893714 -5.0349970
+ [7]  2.8195627  7.7792598 10.3197570 -3.3392475</code></pre>
+</div>
+</div>
+<p>Simple!</p>
+<p>Requirements = tasks = <strong>programming</strong></p>
+<p>specification = structured instructions = <strong>code</strong></p>
 </section>
-<section id="what-is-quarto-and-why-is-it-my-favorite" class="level1">
-<h1>What is Quarto and why is it my favorite?</h1>
-<p>Although <strong>Quarto</strong> is well-defined in its official <strong>documentation,</strong> I prefer to think of <strong>Quarto</strong> as a framework that integrates different technologies to create outstanding, high-quality documents that are interactive, reproducible, and publishable.</p>
-<p>Currently, <strong>Quarto</strong> supports R, Julia, Python, and Observable. You can integrate it in notebooks such as Jupyter, RStudio, or VS Code or simply render it in your terminal. One of my favorite features of <strong>Quarto</strong> is the fact that for every single type of document that, as scientists, we should produce, it is possible to create it in <strong>Quarto</strong>. Additionally, the documentation is excellent, which is why <strong>Quarto</strong> is easy to learn. However, the best part is that it is open source. &lt;3</p>
-<p>I encourage you to start! I promise you will never regret it! (How to start in <a href="https://quarto.org/docs/get-started/hello/rstudio.html">QUARTO</a>)</p>
+<section id="what-is-the-deal-with-the-bad-code" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-deal-with-the-bad-code">🥴 What is the deal with the Bad code?</h2>
+<p>Code is forever! If you have written a bunch of code for your thesis, and have stopped for a while. When you want to retake that task, probably, you will understand why good code matters.</p>
+<p>For instance, comments are something that, in my case, I delay until the end of the scripting process, like the “post-processing.” However, comments are not only for other people. Comments are mainly for me, in the future, and that future could be in some years or even the next morning. Then, in bad code, the more lines you accumulate, the more time is a wasted in the future trying to write and realize what that code was doing.</p>
+<p>In that way, a notable quote from this chapter is <strong>“later equal never” (Le Blanc’s Law).</strong> There are some practices we should follow from the beginning of our creation. For example, following a style guide is a good start. Then, “<a href="http://adv-r.had.co.nz/Style.html">Advanced R</a>” by Wickham could be your “good” starting point.</p>
 </section>
-<section id="jekyll-and-github" class="level1">
-<h1>Jekyll and Github</h1>
-<p>On the other hand, <a href="https://jekyllrb.com/docs/"><strong>Jekyll</strong></a> is a website generator that works very well for creating portfolios, blogs, wikis, and more. It is the language that <a href="https://pages.github.com/"><strong>the GitHub page</strong></a> <strong>uses to host websites</strong>.</p>
-<p>There are many templates that people can clone, edit, and use for personal proposals. If you prefer writing documents directly in markdown (.md), you won’t have any problem. The routine is to create a markdown document (.md) and save it in your _post/ folder. In this case, you do not need to render the document; as soon as you commit and push your changes, GitHub Pages will build and deploy your website.</p>
-<p>A basic Jekyll site structure looks like this:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>my<span class="sc">-</span>blog<span class="sc">/</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>├── _posts<span class="sc">/</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>├── assets<span class="sc">/</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>├── _config.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>The problem arises when you do not want to create the documents completely in markdown (.md) but want to use Jupyter or Quarto and integrate it into your Jekyll site, which uses liquid layaout.</p>
+<section id="but-what-is-a-good-code" class="level2">
+<h2 class="anchored" data-anchor-id="but-what-is-a-good-code">👀 But what is a <strong>good code</strong>?</h2>
+<p>It depends on the author, but in general, they overlap in the following features. Thus, <strong>clean code</strong> is:</p>
+<ol type="1">
+<li><p>Efficient, simple, and direct</p></li>
+<li><p>It is the opposite of speculative</p></li>
+<li><p>It should have been tested</p></li>
+<li><p>It has meaningful names</p></li>
+<li><p>It is readable by humans (comments!)</p></li>
+</ol>
+<p>There are many interpretations of what is good or clean code, but one of my favorites is when the author compares clean code with painting. Everybody can discern a well-painted portrait from one that is not well done; however, that ability to distinguish does not give us the ability to paint a masterpiece. It is something that we acquire over time, patience, and the adoption of good practices and style.</p>
 </section>
-<section id="quarto-in-a-jekyll-site-it-wasnt-straightforward" class="level1">
-<h1>Quarto in a Jekyll site, it wasn’t straightforward</h1>
-<p>After two weeks of trying to solve the problem, I have identified three solutions for integrating Quarto docs into Github Pages. I won’t elaborate on the first two solutions, but I will explain the third one, which was how I solved my problem.</p>
-<section id="solution-1" class="level3">
-<h3 class="anchored" data-anchor-id="solution-1">Solution 1:</h3>
-<p>From a basic Jekyll site, you can edit your file configuration YAML file (config.yml) and link your pages in HTML. Previously, you had to build those pages using Quarto and render them as HTML files. Then, you could link the HTML. A lovely example is Prof.&nbsp;Jarrett’s website for <a href="https://github.com/biol607/biol607.github.io/tree/master">Biol 607</a>. If you check the config.yml file, you will notice that every linked HTML file is a page that he rendered in Quarto.</p>
-</section>
-<section id="solution-2" class="level3">
-<h3 class="anchored" data-anchor-id="solution-2">Solution 2:</h3>
-<p>Another option is to edit your workflow directly. It is a file called “workflow” inside your hidden folder .github/. If you cloned your repository locally, it will create some hidden folders that contain the routines to communicate with your remote repository through Git and instructions on how to build the website once you push your changes to GitHub.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">$</span> alarconvv.github.io % cd .github</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">$</span> .github % ls</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>CODEOWNERS  no<span class="sc">-</span>response.yml stale.yml</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>config.yml  settings.yml    workflows</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="sc">$</span> nano workflows</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Thus, you could include in your workflow file a code block that allows GitHub to render a Quarto document (.qmd) as HTML automatically. Notice that I am saving my .qmd files in a folder called quarto_posts/ and rendering them in the _posts/ folder.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>name<span class="sc">:</span> Render Quarto posts to HTML</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  run<span class="sc">:</span> <span class="er">|</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    mkdir <span class="sc">-</span>p _posts</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> f <span class="cf">in</span> quarto_posts<span class="sc">/</span><span class="er">*</span>.qmd; do</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>      [ <span class="sc">-</span>e <span class="st">"$f"</span> ] <span class="sc">||</span> continue</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>      BASENAME<span class="ot">=</span><span class="er">$</span>(basename <span class="st">"$f"</span> .qmd)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>      OUTFILE<span class="ot">=</span><span class="st">"_posts/$(date +%Y-%m-%d)-${BASENAME}.html"</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      quarto render <span class="st">"$f"</span> <span class="sc">--</span>to html <span class="sc">--</span>output <span class="st">"$OUTFILE"</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    done</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>That means your folder structure should look like this:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>my<span class="sc">-</span>blog<span class="sc">/</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>├── _posts<span class="sc">/</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>│   ├── report.html</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>├── assets<span class="sc">/</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>├── quarto<span class="sc">-</span>docs<span class="sc">/</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>│   ├── report.qmd</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>├── _config.yml</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="solution-3" class="level3">
-<h3 class="anchored" data-anchor-id="solution-3">Solution 3:</h3>
-<p>The last solution I know, and the one I am using, is not the most elegant or clever, but it works! This solution is practical, especially for websites that use a layout with liquid (<a href="https://github.com/alarconvv/alarconvv.github.io">See my web code</a>).</p>
-<p>If the document is only text (i.e., it does not include any code blocks), I write it as a Markdown document (.md). Then, I include a YALM block at the beginning with the instructions, tags, and items that liquid format will take to integrate this post into the website. Then, I save this .md file directly in my _post/ folder. Push changes, and Github will do the rest.</p>
-<p>It is the <a href="https://github.com/alarconvv/alarconvv.github.io/blob/master/_posts/2025-04-07-MyFirstBlog.md?plain=1">YAML block</a> I used for <a href="https://alarconvv.github.io/blog/2025/MyFirstBlog/">my first post</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>layout<span class="sc">:</span> post</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Why I’m Starting This Blog"</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> <span class="dv">2025-04-07</span> <span class="dv">15</span><span class="sc">:</span><span class="dv">09</span><span class="sc">:</span><span class="dv">00</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>description<span class="sc">:</span> Documenting my journey through the qualifying exam — writing to learn, reflect, and grow.</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>tags<span class="sc">:</span> [quals writing motivation]</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>categories<span class="sc">:</span> posts</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>featured<span class="sc">:</span> true</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>Hi<span class="sc">!</span> There<span class="sc">!</span> <span class="sc">--</span><span class="ot">-&gt;</span> the rest of the document.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>However, most of my posts will include chunks with code in R or Python. In that case, I write the document in Rstudio as usual. Then, I render it as HTML directly in Rstudio or using the command line in my terminal.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>quarto render YYYY<span class="sc">-</span>MM<span class="sc">-</span>DD<span class="sc">-</span>title<span class="sc">-</span>of<span class="sc">-</span>post.qmd <span class="sc">--</span>to html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Finally, I open my HTML file in a text editor and add YAML block at the top of the file.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>layout<span class="sc">:</span> post</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Using Quarto with Jekyll"</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>date<span class="sc">:</span> <span class="dv">2025-05-28</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>tags<span class="sc">:</span> [r, quarto]</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>categories<span class="sc">:</span> [blog]</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>description<span class="sc">:</span> <span class="st">"How to integrate Quarto HTML output in Jekyll blog"</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="sc">----</span><span class="ot">-&gt;</span> My HTML file starts here <span class="sc">-------</span><span class="ot">-&gt;</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="er">&lt;</span><span class="sc">!</span>DOCTYPE html<span class="sc">&gt;</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="er">&lt;</span>html xmlns<span class="ot">=</span><span class="st">"http://www.w3.org/1999/xhtml"</span> lang<span class="ot">=</span><span class="st">"en"</span> xml<span class="sc">:</span>lang<span class="ot">=</span><span class="st">"en"</span><span class="sc">&gt;</span><span class="er">&lt;</span>head<span class="sc">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Save changes and move it to my _post/ folder. Commit and push the changes. Thus, my blog will be updated automatically by GitHub Pages.</p>
-<p>I could have converted my Quarto document (.qmd) into a Markdown document (.md). However, the liquid layout does not recognize the format, and my post loses the aesthetic when GitHub builds and deploys it.</p>
-<p>It is simple, not elegant, but a practical solution, and it allows me to control the tags ;)</p>
-<p>Now, I feel comfortable using my favorite document generator without changing my lovely Jekyll template. After two weeks of looking for a solution, I finally did it. Now, I do not have any other excuse to delay writing and updating my blog.</p>
-</section>
+<section id="progress-tracker" class="level2">
+<h2 class="anchored" data-anchor-id="progress-tracker">✅ Progress Tracker</h2>
+<ul>
+<li>Total days: 1/40</li>
+<li>Material from: Daniel Haen — Clean Code ✅</li>
+</ul>
+<p>*Martin, R. C., Coplien, J. O. (2009). Clean code: a handbook of agile software craftsmanship. Upper Saddle River, NJ [etc.]: Prentice Hall. ISBN: 9780132350884 0132350882</p>
 </section>
 
 </main>

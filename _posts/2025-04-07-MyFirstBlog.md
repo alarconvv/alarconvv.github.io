@@ -10,21 +10,28 @@ featured: true
 
 Hi! There!
 
-To be honest, I do not know how to run a blog or what to write here for the first time. I am not a person who loves writing (especially in a language that is not my mother tongue). However, I am the kind of person who enjoys sharing stories, learning new things (Thanks ADD), and particularly teaching. Yes, I like teaching, but not for the reasons you are thinking. I do not feel it is my vocation. Indeed, I admire people who love teaching and can cope with stress levels that I could not. For me, teaching has been the way how I learned to learn, and it is my approach to learning something. Then, It is a win-win! I learn, and somebody learns, too! Thus, considering my quals are coming in August, I just want to follow my favorite scientist's (Richard Feynman) words: "If you want to master something, teach it," and it is the purpose of this new chapter in my life: a blog I hope to maintain during my career as a scientist and help me approve my exams!
+To be honest, I do not know how to run a blog or what to write here for the first time. I am not a person who loves writing (especially in a language that is not my mother tongue). However, I am the kind of person who enjoys sharing stories, learning new things, and particularly teaching.
+Yes, I like teaching, but not for the reasons you are thinking. I do not think it is a vocation. For me, teaching has been the way how I learned to learn, and it is my approach to learning something. Teaching is a win-win! I learn, and somebody learns, too!
+
+So, here, I will try to teach what I am learning. My quals are coming in August, I need to process thousand of information in the next months, and the only way I know is teaching, sharing it! So, following my favorite scientist's (Richard Feynman) words: "If you want to master something, teach it." That is my purpose. I want to master my exam topics, so I will use this media to share my process.
+
+
 
 ### Who am I? Because there is a person behind this work
 
-My name is Leidy Viviana Romero Alarcon; everybody calls me Viviana except my family. For a while, I hated Leidy because it is a bad spelling of 'Lady' in English. However, I made peace with my first name after starting college and discovering about **Joseph Leidy,** one of the most prolific paleontologists and anatomists of the 19th century. This fact helps me to tolerate 'Leidy' because I love paleontology and vertebrate comparative anatomy. All this is to say: you are welcome to call me as you want. Random fact, isn't it?
+My name is Leidy Viviana Romero Alarcon; everybody calls me Viviana except my family. For a while, I hated Leidy because it is a bad spelling of 'Lady' in English. However, I made peace with my first name after starting college and discovering about **Joseph Leidy,** one of the most prolific paleontologists and anatomists of the 19th century. I love paleontology and vertebrate comparative anatomy, so I start to tolerate my first name. At this point, I do not care if people call me Viviana or Leidy, but I prefer Viviana. But you are welcome to use either.
 
 Well, I am from a small city in Colombia, Bucaramanga. My education has been 100% from public schools, from elementary school to my PhD (and I am so proud of that). Of course, It has not been easy, but I am here against all probabilities.
 
-Nowadays, I am a PhD student at The University of Massachusetts in Boston. Something remarkable is that this university and my PI gave me the most important opportunity in my life, something that makes me feel thankful (Yes, finally, I could overcome my frustrations about English. Finally, I could ask for a coffee without frozen). Thus, I reached my second year here, with ups and downs but, in general, successful. I don't know yet what will be my dissertation. There are tons of wonderful questions to answer, but most will demand more time than I have available. For the time being, I am preparing my quals and trying to optimize my life. **Time** is the limiting factor!
+Nowadays, I am a PhD student at The University of Massachusetts in Boston. I have met beutiful people, the city is amazing and summer and falls are the best. Not to mention before that this university and my PI gave me a wonderful opportunity to continue my academic studies and overcome my frustration with the "English language." Finally, I cand ask for a coffee in a restaurant without getting frozen in the process. XD Thus, I have reached my second year here, with ups and downs but, in general, "Sabroso pero doloroso".
+
+Regarding my researching, uff I don't know yet what will actually be my dissertation topic. There are tons of wonderful questions to answer, but most will demand more time than I have available. For the time being, I am preparing my quals and trying to optimize my life. **Time** is the limiting factor! (And money)
 
 ### 📝 To practice writing
 
-English is not my first language, and the first session of my quals is a written exam. No internet connection, no corrector, just me and a basic text editor! That is a nightmare, and makes me feel anxious (Although, almost everything here makes me feel anxious).
+English is not my first language as you noticed before, and the first session of my quals is a written exam. No internet connection, no corrector, just me and a basic text editor! That is a nightmare, and makes me feel anxious (Although, almost everything here makes me feel anxious).
 
-So, I want to get comfortable writing, expressing complex idea clearly and naturally. I hope getting better writing regularly in a low-pressure. So, I will see this blog as a good way to grow. (And pass my exam)
+So, I would like to feel comfortable writing, expressing complex idea clearly and naturally. I hope getting better writing regularly in a low-pressure practice. So, I see this blog as a good way to grow up. (And aprove my exam)
 
 ### 🎯 To stay focused and accountable
 
@@ -46,7 +53,7 @@ In this moment writing this post, I understand my PI's words when one day I arri
 
 So, this is my purpose and I hope to keep standing with my objective for a long time. I need to build better habits not just for this exam, but for my life as a researcher.
 
-(So, one advice you did not ask: "Listen to your PI")
+(So, one advice you did not ask: "Listen to your PI", even when you do not want XD)
 
 ---
 
