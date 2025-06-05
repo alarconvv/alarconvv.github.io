@@ -1,0 +1,168 @@
+# The importance of naming
+
+I will dedicate this post to the art of naming. As programmers or scripters, we constantly name things: variables, functions, columns, files, and so on.   Naming is the second chapter in the Clean Code: A Handbook of Agile Software Craftsmanship by Martin Coplien (2009)\*. Although this book is dedicated to Java language, I will try here to put all of Martin's good advice in terms of R language.
+
+Let's name some things.
+
+### The Importance of Naming: The principles
+
+Names are as important as good comments. Variables, functions, classes, methods, and inner names in databases are examples of what we should name every time when coding. So, the art of naming is ubiquitous in programming, no matter the language.
+
+Therefore, meaningful names take part in our way of writing clean code. Thus, there are some principles that we should follow to choose meaningful names.
+
+#### Intention-Reveling Names
+
+This is the first recommendation by Martin Coplien. A **Name** should clearly convey why, what, and how.
+
+-   Why does it exist?
+-   What is this?
+-   How is it used?
+
+```{r}
+# one common error is to name variables with a unique letter
+d <- 30
+
+# instead, we can give them more meaning, as:
+
+sampling_days <- 30
+
+# also, using letters such as l or O could generate confusion because they looks like numbers
+
+l <- 1
+
+O <- 0
+```
+
+It reveals the intention (Sampling) and the unit (Days) immediately. But yes, you are right! It is not common, and people use **x** for everything. "Monoletters" names make faster our coding, but remember always: We are coding for us and others in the future (See: [Clean_code](https://alarconvv.github.io/blog/2025/CleanCode123/) post). Thus, you will not force readers to infer intent-make it explicitly.
+
+#### Avoid Disinformation
+
+We must avoid names that mislead or suggest meanings that contradict the actual intention.
+
+```{r}
+#List is a object type in R, so List has a implicit meaning for this language, what is different form the humman language. So, if you are programming 
+locallity_list <- data.frame("Locallity" = c("Vetas", "Zapatoca", "Barichara", "Guane", "Bucaramanga"), "States" = 1)
+
+
+locallity_df <- data.frame("Locallity" = c("Vetas", "Zapatoca", "Barichara", "Guane", "Bucaramanga"), "States" = 1)
+
+```
+
+The problem with abbreviations is how universal is it. In R, df is commonly used to represent data frames, but what happens if we are using **hp** to refer to a hypotenuse? A UNIX programmer could think in the **hp** platform, for instance. I could think immediately about the computer brand.
+
+#### Make a meaningful distinction
+
+A variable could be similar but with very different uses. So, use their purpose to distinguish each other.
+
+```{r}
+
+database <- 1:100
+
+database1 <- sample(x = database, size = 70, replace = F)
+
+database2 <- database[!database1]  
+
+
+# You could improve it inthis way:
+
+raw_database <- 1:100
+
+training_set <- sample(x = raw_database, size = 70, replace = F)
+
+test_set <- raw_database[!training_set]  
+```
+
+#### Use Pronounceable and Searchable Names
+
+Names, especially for variables and constants, should be easy to find in your codebase. Again, single letters are difficult to locate, especially if they are vowels. However, do not get confused with the letter used for loop (i,n,k,j). They are completely acceptable in that context.
+
+```{r}
+a <- 0.1
+
+# Instead
+
+significance_level <- 0.1
+
+
+
+
+```
+
+#### Avoid Encoding and Prefixes
+
+It is one of the most difficult for me. Avoiding encoding and prefixes implies not to use your own abbreviations. For example, as a biologist, I am sure that if I used "sp," many others could think about "species," right? But what happens if somebody outside the biology field wants to use my code? In that case, sp won't make sense at all. So, "species names" should be species_names always! (BTW, do not use periods (.), such as species.names, it could imply a method...but that is part of another post)
+
+```{r, eval=FALSE}
+# intead using
+
+df_data 
+vec_names 
+str_title
+sp_nm
+
+# use:
+
+survey_results
+species_names
+page_title
+species_names
+
+```
+
+### Naming Conventions for Specific Code Elements in R
+
+Then, we should keep in mind next conventions for naming objects:
+
+-   all low cases
+
+-   Use underscore to separate words
+
+-   easy to read
+
+| Element | Style | Example | Comment |
+|----|----|----|----|
+| Variable | word_case | mean_length | Descriptive |
+| Function | word_case | load_data() | Use verbs/ actions |
+| Class (S3/S4/R6) | WordCase | GeneExpression | use nouns |
+| S3 Method | generic.class | print.GeneExpression() | Match generic + class name |
+| Constants | UPPER_CASE | MAX_ITERATIONS | flags and constants |
+
+### Advanced Naming Considerations
+
+#### Don't Be Cute or Punny
+
+Sometimes, we want to be funny, but coding, we must prioritize clarity over cleverness or humor.
+
+```{r, eval=FALSE}
+
+FinallyEureka <- function(x, y) {
+                     model <- lm(y ~ x)
+                     return(model)
+                    }
+
+# Instead, use this: 
+regression_model <- function(predictor, response) {
+                     model <- lm(response ~ predictor)
+                     return(model)
+                    }
+
+
+```
+
+#### Pick One Word per Concept
+
+Use a consistent vocabulary for abstract concepts across the codebase
+
+```{r, eval=FALSE}
+# All of them are referring to load data, so be consistent and choose one 
+
+get_data()
+retrieve_info()
+fetch_records()
+```
+
+
+# Final thoughts
+
+When we think about clean code, we should start thinking about meaningful names. Clean names will reduce bugs and increase readability and the usability of your code. So, keep in mind this post next time when you take a seat to write code.
+
